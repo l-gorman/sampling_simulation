@@ -10,7 +10,9 @@ Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.0.0
 Imports: 
     brms,
+    dagitty,
     dplyr,
     ggplot2,
     readr,
+    ReGenesees,
     tidyr

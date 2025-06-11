@@ -1,0 +1,19 @@
+---
+title: "Simulating Data"
+format: html
+editor: visual
+---
+
+```{r}
+# Reading and Tidying Data
+library(readr)
+library(tidyr)
+library(dplyr)
+
+
+library(ggplot2)
+library(dagitty)
+
+library(brms)
+library(ReGenesees)
+
