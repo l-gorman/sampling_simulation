@@ -4,16 +4,70 @@ format: html
 editor: visual
 ---
 
+## Introduction
+
+This is an initial analysis where I 
+generate a dataset that is meant to somewhat 
+simulate the UK Labour Force Survey (LFS) dataset.
+
+I'm doing this because I'm interested in learning 
+more about sampling, weighting, and estimation. This
+is just my understanding, I may get things wrong here.
+
+Information on sampling can be found [here](https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/methodologies/labourforcesurveylfsqmi). 
+
+### Sampling
+
+It seems that sampling is done using the Postcode Address
+File (PAF). A big file with all the postcodes, and all the 
+addresses associated with these postcodes. This is the case 
+except for north of the Caledonian canal which has another 
+sampling frame as it's much less densely populated.
+frame, but I'm going to ignore that for now.
+
+Some postcodes have more/less houses. Some households 
+have more or less people. 
+
+The weight
+
+
+
+
 ```{r}
-# Reading and Tidying Data
+#| message: false
+#| warning: false
+#| error: false
+# Packages for Reading and Tidying Data
 library(readr)
 library(tidyr)
 library(dplyr)
+#----------
+library(ggplot2) # Plotting library 
+library(dagitty) # For DAGs
+
+library(brms) # For Bayesian modelling
+library(ReGenesees) # For weighting and estimation
+```
 
 
-library(ggplot2)
-library(dagitty)
+```{r}
 
-library(brms)
-library(ReGenesees)
+set.seed(123)
+
+generate_postcodes <- function(){
+
+}
+
+generate_households <- function(){
+  
+}
+
+generate_individuals <- function(){
+  
+}
+
+
+
+
+```
 
